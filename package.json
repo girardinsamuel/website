@@ -2,9 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "description": "Personal website",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss-cli@latest build style.css -o index.css",
+    "production": "NODE_ENV=production npx tailwindcss-cli@latest build style.css -o index.css"
   },
   "repository": {
     "type": "git",
